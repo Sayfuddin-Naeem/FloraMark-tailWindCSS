@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme{
+    /** Colors */
+    --color-dark-02: #111111;
+    --color-dark-03: #252432;
+    --color-dark-04: rgba(0, 0, 0, 0.5);
+    --color-dark-05: #8987A1;
+    --color-dark-06: #6B7280;
+    --color-bg-primary: #F5F8FF;
+    --color-bg-secondary: #FAFCFF;
+    --color-btn-primary: #E95A08;
+
+    /* fonts */
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Noto Serif", serif; 
+}
+
+@layer base {
+  
+    *{
+        font-family: var(--font-primary);
+        font-style: normal;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        letter-spacing: 0.1rem;
+    }
+
+    html {
+        font-size: 62.5%; /* For 1rem = 10px base */
+    }
+
+    h1,h2{
+        font-weight: bold;
+        font-family: var(--font-secondary);
+    }
+
+    h2{
+        font-size: 5rem;
+    }
+
+    h3{
+        color: var(--color-dark-02);
+    }
+
+    li{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    li, a{
+        font-weight: 600;
+    }
+
+    p, h3{
+        font-size: 2.2rem;
+    }
+
+    p{
+        color: var(--color-dark-04);
+    }
+
+}

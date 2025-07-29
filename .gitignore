@@ -1,0 +1,29 @@
+# Ignore a folder and all its contents
+FloraMark/
+
+# Node.js dependencies
+node_modules/
+
+# Tailwind CSS build artifacts (optional to ignore)
+src/input.css     # Optional – keep if you want to show raw input
+src/              # Ignore if everything in it is just raw CSS
+*.log
+
+# Environment
+.env
+.env.* 
+
+# System files
+.DS_Store
+
+# OS-specific
+Thumbs.db
+
+# Editor specific
+.vscode/
+.idea/
+*.swp
+
+# Optional build files (if not using on GitHub)
+tailwind.config.js
+package-lock.json
