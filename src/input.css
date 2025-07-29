@@ -67,3 +67,10 @@
     }
 
 }
+
+@layer components{
+    .btn{
+        @apply border-none text-white font-semibold cursor-pointer;
+        background-color: var(--color-btn-primary);
+    }
+}
