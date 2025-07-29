@@ -18,18 +18,18 @@
     <title>FloraMark</title>
 </head>
 
-<body class="bg-primary">
+<body class="bg-bg-primary">
     
     <!-- ========== Start header Section ========== -->
     
-    <header class="section-header">
+    <header class="mt-[3rem]">
 
         <!-- for mobile devices -->
-         <div class="mobile-top">
-            <div class="mobile-top--left">
-                <p>9:41</p>
+         <div class="sm:hidden mb-[1.3rem] flex justify-between">
+            <div class="pl-[5.1rem]">
+                <p class="text-black text-[1.7rem] font-semibold font-secondary">9:41</p>
             </div>
-            <div class="mobile-top--right">
+            <div class="pr-[3rem] flex gap-4 font-semibold text-[1.7rem]">
                 <i class="fa-solid fa-signal"></i>
                 <i class="fa-solid fa-wifi"></i>
                 <i class="fa-solid fa-battery-full"></i>
@@ -38,29 +38,26 @@
         
         <!-- ========== Start navbar Section ========== -->
         
-        <nav class="section-header--nav container">
+        <nav class="mx-[1.6rem] sm:mx-[15rem] grid grid-cols-[2fr_1.2fr] sm:grid-cols-[4fr_2.5fr_1fr] items-center gap-4">
             <div class="section-nav--brand">
-                <figure class="nav-brand--logo">
-                    <img src="assets/logo.png" alt="flowMark logo">
+                <figure class="w-[13.5rem] h-[8.2rem]">
+                    <img class="max-w-full" src="assets/logo.png" alt="flowMark logo">
                 </figure>
             </div>
-            <div class="section-nav--menu">
-                <figure class="nav-menu--icon">
-                    <i class="fa-solid fa-bars"></i>
-                </figure>
-                <ul class="nav-menu--items">
-                        <li class="nav-menu--item">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-menu--item">
-                            <a href="#">Shop</a>
-                        </li>
-                        <li class="nav-menu--item">
-                            <a href="#">About Us</a>
-                        </li>
+            <div class="hidden sm:block">
+                <ul class="grid grid-cols-3 items-center gap-4 text-dark-05">
+                    <li class="text-dark-02 font-bold">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
                 </ul>
             </div>
-            <div class="section-nav--cart">
+            <div class="text-[1.7rem] cursor-pointer">
                 <i class="fa-solid fa-cart-shopping"></i>
                 Cart ($56)
             </div>
@@ -70,12 +67,12 @@
 
         <!-- ========== Start banner Section ========== -->
         
-        <section class="section-header--banner container">
+        <section class="mx-[15rem] my-[12rem] grid grid-cols-2 items-end">
             <div class="section-banner--content">
-                <h1 class="banner-content--heading">
-                    ALWAYS <span class="text-Vermilion">FRESH<br>FLOWERS</span>
+                <h1 class="text-[6.5rem]">
+                    ALWAYS <span class="text-[6.5rem] text-btn-primary font-secondary">FRESH<br>FLOWERS</span>
                 </h1>
-                <p class="banner-content--details">
+                <p class="mt-[1.3rem]">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
                 </p>
             </div>
