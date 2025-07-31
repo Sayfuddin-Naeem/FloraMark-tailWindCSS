@@ -25,6 +25,9 @@
     /* fonts */
     --font-primary: "Inter", sans-serif;
     --font-secondary: "Noto Serif", serif; 
+
+    /* animations */
+    --animate-my-spin: my-spin 5.5s linear infinite alternate;
 }
 
 @layer base {
@@ -64,6 +67,32 @@
 
     p{
         color: var(--color-dark-04);
+    }
+
+    @keyframes my-spin{
+        0%{
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+
+        98%{
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
     }
 
 }
