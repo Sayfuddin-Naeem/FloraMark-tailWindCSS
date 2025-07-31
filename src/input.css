@@ -102,4 +102,18 @@
         @apply border-none text-white font-semibold cursor-pointer;
         background-color: var(--color-btn-primary);
     }
+
+    .bg-overlay{
+        @apply bg-no-repeat relative bg-cover bg-center text-white overflow-hidden z-0;
+    }
+
+    .bg-overlay::before{
+        content: '';
+        @apply absolute inset-0 z-10;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .bg-overlay > *{
+        @apply relative z-20;
+    }
 }
