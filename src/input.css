@@ -116,4 +116,15 @@
     .bg-overlay > *{
         @apply relative z-20;
     }
+
+    .sub-input--email{
+        @apply bg-white text-black placeholder:text-dark-04 sm:h-20 px-8;
+        padding-block: 1.55rem;
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .sub-input--email:focus{
+        @apply outline-0 border border-btn-primary;
+        box-shadow: 0 0 0.7rem var(--color-btn-primary);
+    }
 }
